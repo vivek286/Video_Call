@@ -5,13 +5,13 @@ import 'firebase/firestore';
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyBjWY-HWb1GMcCfou2Zt1zUMx1fANgpMKw",
-  authDomain: "one-on-one-500e5.firebaseapp.com",
-  projectId: "one-on-one-500e5",
-  storageBucket: "one-on-one-500e5.appspot.com",
-  messagingSenderId: "5263465081",
-  appId: "1:5263465081:web:0155000e1d10fb2d8512a8",
-  measurementId: "G-4YL9WKZJ6Z"
+  apiKey: "AIzaSyAv11iIHMxgT8Lob5tAb5mNfQ4BaioOZ80",
+  authDomain: "one-on-one2.firebaseapp.com",
+  projectId: "one-on-one2",
+  storageBucket: "one-on-one2.appspot.com",
+  messagingSenderId: "829151653008",
+  appId: "1:829151653008:web:10cee384e6106e0c47fc15",
+  measurementId: "G-PP8V6YTQ1Z"
 };
 
 if (!firebase.apps.length) {
@@ -67,7 +67,10 @@ webcamButton.onclick = async () => {
   answerButton.disabled = false;
   webcamButton.disabled = true;
 };
-
+//Adding Hangup button
+hangupButton.onclick= async()=>{
+  await navigator.mediaDevices.getUserMedia({ video: false, audio: false });
+}
 // 2. Create an offer
 callButton.onclick = async () => {
   // Reference Firestore collections for signaling
