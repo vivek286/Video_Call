@@ -5,13 +5,13 @@ import 'firebase/firestore';
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyB-Jpz0wVqT3oHNnVDpxQlpwAiNQxzvvOo",
-  authDomain: "king-yoyqsh.firebaseapp.com",
-  projectId: "king-yoyqsh",
-  storageBucket: "king-yoyqsh.appspot.com",
-  messagingSenderId: "285586127151",
-  appId: "1:285586127151:web:558f55cb5030437597c9da",
-  measurementId: "G-SGYDB39PPH"
+  apiKey: "AIzaSyCNW7UY6KezrFc8p_HustgWCfWa4BtEh8A",
+  authDomain: "one-on-onee.firebaseapp.com",
+  projectId: "one-on-onee",
+  storageBucket: "one-on-onee.appspot.com",
+  messagingSenderId: "130517254550",
+  appId: "1:130517254550:web:c5b2dc3df50fdaec101db7",
+  measurementId: "G-6ELEB0KW4H"
 };
 
 if (!firebase.apps.length) {
