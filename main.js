@@ -68,10 +68,7 @@ webcamButton.onclick = async () => {
   answerButton.disabled = false;
   webcamButton.disabled = true;
 };
-//Adding Hangup button
-hangupButton.onclick= async()=>{
-  await navigator.mediaDevices.getUserMedia({ video: false, audio: false });
-}
+
 // 2. Create an offer
 callButton.onclick = async () => {
   // Reference Firestore collections for signaling
