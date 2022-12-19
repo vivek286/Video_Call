@@ -4,7 +4,7 @@ import { VideoPlayer } from './VideoPlayer';
 
 const APP_ID = '199b492fad7642208e5c6b7698d263cc';
 const TOKEN =
-  '007eJxTYOCY2uJev+KE2uTpopNk1vx0/X822ESD89eXmkO3c0zvTbNUYDC0tEwysTRKS0wxNzMxMjKwSDVNNksyN7O0SDEyM05OLjq9ILkhkJFhI+M6FkYGCATxmRnKU7IYGABB1x92';
+  '007eJxTYLBkq7n0/qJ9gdtHi+dsN9tapr8PLVt6cp0/W/7sm1PDNsUqMBhaWiaZWBqlJaaYm5kYGRlYpJommyWZm1lapBiZGScnN11YkNwQyMhQvTeJkZEBAkF8ZobylCwGBgCKbSBv';
 const CHANNEL = 'wdj';
 
 const client = AgoraRTC.createClient({
@@ -77,8 +77,10 @@ export const VideoRoom = () => {
     >
       <div
         style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(2, 200px)',
+          display: 'flex',
+          // gridTemplateColumns: 'repeat(2, 200px)',
+          // justify-content: 'space-between'
+          // justifyContent:'space-between'/
         }}
       >
         {users.map((user) => (

@@ -6,7 +6,7 @@ function App() {
   const [joined, setJoined] = useState(false);
   return (
     <div className="App">
-      <h1>WDJ Virtual Call</h1>
+      <h1>Click Join</h1>
 
       {!joined && (
         <button onClick={() => setJoined(true)}>
